@@ -1,0 +1,36 @@
+function gerar_matrizes()
+
+numEscondidos = [1, 10, 50];                  % Numero de nodos escondidos
+algsTr = {'traingdm', 'trainoss', 'trainlm'}; % Algoritmos de treinamento
+funcsAtv = {'tansig', 'logsig'};              % Funções de ativacao
+taxaslr = [0.001, 0.01, 0.1];                 % Taxas de aprendizagem
+epocas = [5000, 10000];
+
+for iAlgTr = 1 : size(algsTr, 2)
+    algoritmoTreinamento = algsTr{iAlgTr};
+    
+    for iFuncAtv = 1 : size(funcsAtv, 2)
+        funcaoAtivacao = funcsAtv{iFuncAtv};
+        
+        for iNumEsc = 1 : size(numEscondidos, 2)
+            numEscondido = numEscondidos(iNumEsc);
+            
+            for iTaxalr = 1 : size(taxaslr, 2)
+                taxalr = taxaslr(iTaxalr);
+                
+                for iEpoca = 1 : size(epocas, 2)
+                    epoca = epocas(iEpoca);
+                    
+                    resFilename = strcat(algoritmoTreinamento,'_',funcaoAtivacao,'_',num2str(numEscondido),'_',num2str(taxalr),'_',num2str(epoca),'_saida');
+                    matriz_confusa
+                end
+            end
+        end
+    end
+end
+
+
+
+
+
+end

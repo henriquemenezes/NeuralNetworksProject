@@ -1,0 +1,11 @@
+Configuracao:
+Alg.Trein.:trainlm
+Func.Ativ.:logsig
+Nod.Esc.:5
+Tax.Apr.:0.01
+Epc.Max.:5000
+Epc.Real.:12
+MSE tr.:0.34765
+MSE val.:0.36668
+MSE tst.:0.11083
+Erro classf. tst.:1.7199

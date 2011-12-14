@@ -11,8 +11,8 @@ def read_data(filename):
         print ''
 
         f = open(filename)
-
-        data = [row.split(';') for row in f.read().strip().split('\n')]
+		
+        data = [row.split(',') for row in f.read().strip().split('\n')]
         total = len(data)
         
         f.close()
